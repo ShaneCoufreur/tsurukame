@@ -251,6 +251,14 @@ private func postNotificationOnMainQueue(_ notification: Notification.Name) {
     ALTER TABLE sync ADD COLUMN subjects_updated_after TEXT;
     UPDATE sync SET subjects_updated_after = "";
     """,
+
+    """
+    CREATE TABLE pitchaccents (
+      japanese TEXT,
+      type INTEGER,
+      PRIMARY KEY (japanese, type)
+    );
+    """,
   ]
 
   private let kClearAllData = """
@@ -488,6 +496,16 @@ private func postNotificationOnMainQueue(_ notification: Notification.Name) {
       }
       return nil
     }
+  }
+
+  func getPitchAccent(japanese: String) -> [Int] {
+    var ret = [Int]()
+    db.inDatabase { db in
+      for cursor in db.query("SELECT type FROM pitchaccents WHERE japanese = ?", args: [japanese]) {
+        ret.append(Int(cursor.int(forColumnIndex: 0)))
+      }
+    }
+    return ret
   }
 
   func isValid(subjectId: Int32) -> Bool {
@@ -929,6 +947,36 @@ private func postNotificationOnMainQueue(_ notification: Notification.Name) {
       }
     }
 
+    if let url =
+      URL(string: "VOCABTABLE SOURCE") {
+      URLSession.shared.dataTask(with: url) { data, _, _ in
+        if let data = data {
+          do {
+            let res = try JSONDecoder().decode(PitchAccentResponse.self, from: data)
+            print(res)
+
+            ///
+            // NSLog("Updated %d subjects at %@", subjects.count, updatedAt)
+            self.db.inTransaction { db in
+              for pa in res.pitchAccent {
+                for type in pa.value {
+                  db.mustExecuteUpdate("REPLACE INTO pitchaccents (japanese, type) " +
+                    "VALUES (?, ?)",
+                    args: [
+                      pa.key,
+                      type,
+                    ])
+                }
+              }
+            }
+            ///
+          } catch {
+            print(error)
+          }
+        }
+      }.resume()
+    }
+
     return when(fulfilled: [
       sendAllPendingProgress(progress: childProgress(1)),
       sendAllPendingStudyMaterials(progress: childProgress(1)),
@@ -1009,4 +1057,13 @@ struct Cached<T> {
       return value!
     }
   }
+}
+
+struct PitchAccentResponse: Codable { // or Decodable
+  let pitchAccent: [PitchAccent]
+}
+
+struct PitchAccent: Codable {
+  let key: String
+  let value: [Int]
 }

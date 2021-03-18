@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0A943349E17FA7889EFEE41F /* Pods_Tsurukame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC80AAF9736A570E3C4CC09E /* Pods_Tsurukame.framework */; };
-		480B243123D6830300FC2A82 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 480B243023D6830300FC2A82 /* SwiftPackageProductDependency */; };
+		3497CFEE25FFD5B100F83DAA /* PitchAccentCollectionModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497CFED25FFD5B100F83DAA /* PitchAccentCollectionModelItem.swift */; };
+		3497CFFE25FFEB5100F83DAA /* PitchAccentModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497CFFD25FFEB5100F83DAA /* PitchAccentModelItem.swift */; };
 		34D15E6525FEB348007114EF /* TKMLessonApprenticeLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D15E6425FEB348007114EF /* TKMLessonApprenticeLimitViewController.m */; };
+		480B243123D6830300FC2A82 /* Rexy in Frameworks */ = {isa = PBXBuildFile; productRef = 480B243023D6830300FC2A82 /* Rexy */; };
 		481B2FED23C55AAF0041EF1F /* CurrentLevelReviewTimeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481B2FEC23C55AAF0041EF1F /* CurrentLevelReviewTimeItem.swift */; };
 		4820306724D849E100B40FDD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633632EE201F3490006D582B /* Settings.swift */; };
 		48CF714823EAFA5600A838F4 /* TKMReviewBatchSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF714623EAFA5600A838F4 /* TKMReviewBatchSizeViewController.m */; };
@@ -59,7 +61,7 @@
 		637CA11525D7E48A0082580E /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA11425D7E48A0082580E /* LessonsViewController.swift */; };
 		637CA12C25D7EDFF0082580E /* ReviewSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA12B25D7EDFE0082580E /* ReviewSummaryViewController.swift */; };
 		637CA17625D7F2C70082580E /* wanikani.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA17525D7F2C70082580E /* wanikani.pb.swift */; };
-		637CA18725D7F5A10082580E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 637CA18625D7F5A10082580E /* SwiftPackageProductDependency */; };
+		637CA18725D7F5A10082580E /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 637CA18625D7F5A10082580E /* SwiftProtobuf */; };
 		637CA1BF25D806B60082580E /* wanikani.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CA17525D7F2C70082580E /* wanikani.pb.swift */; };
 		637E636E242E137C00F0B5CA /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6364A10A242DFB6F000ABF32 /* Intents.framework */; };
 		638A5C4E25A471F9001A7AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A5C4D25A471F9001A7AEE /* AppDelegate.swift */; };
@@ -236,6 +238,8 @@
 		20A6D3E1C6F7A492EB9DDF0C /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		21894D9E0883B0107075DD6F /* Pods-Tsurukame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsurukame.release.xcconfig"; path = "Target Support Files/Pods-Tsurukame/Pods-Tsurukame.release.xcconfig"; sourceTree = "<group>"; };
 		301BAAC2C21E4A99238D1E80 /* Pods-FontScreenshotter-FontScreenshotterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontScreenshotter-FontScreenshotterUITests.release.xcconfig"; path = "Target Support Files/Pods-FontScreenshotter-FontScreenshotterUITests/Pods-FontScreenshotter-FontScreenshotterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3497CFED25FFD5B100F83DAA /* PitchAccentCollectionModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchAccentCollectionModelItem.swift; sourceTree = "<group>"; };
+		3497CFFD25FFEB5100F83DAA /* PitchAccentModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchAccentModelItem.swift; sourceTree = "<group>"; };
 		34D15E6325FEB348007114EF /* TKMLessonApprenticeLimitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMLessonApprenticeLimitViewController.h; sourceTree = "<group>"; };
 		34D15E6425FEB348007114EF /* TKMLessonApprenticeLimitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMLessonApprenticeLimitViewController.m; sourceTree = "<group>"; };
 		34E86AD95515CD815B3086D0 /* Pods-Tsurukame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tsurukame.debug.xcconfig"; path = "Target Support Files/Pods-Tsurukame/Pods-Tsurukame.debug.xcconfig"; sourceTree = "<group>"; };
@@ -422,8 +426,8 @@
 			files = (
 				637E636E242E137C00F0B5CA /* Intents.framework in Frameworks */,
 				63CAAB111FD7FACD00E09DA1 /* SystemConfiguration.framework in Frameworks */,
-				480B243123D6830300FC2A82 /* BuildFile in Frameworks */,
-				637CA18725D7F5A10082580E /* BuildFile in Frameworks */,
+				480B243123D6830300FC2A82 /* Rexy in Frameworks */,
+				637CA18725D7F5A10082580E /* SwiftProtobuf in Frameworks */,
 				0A943349E17FA7889EFEE41F /* Pods_Tsurukame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,6 +662,8 @@
 				638D197425C6AA4B00B80544 /* MarkupModelItem.swift */,
 				63C74BC725C822C9004F6C99 /* SubjectModelItem.swift */,
 				63C74BD025C82B1D004F6C99 /* SubjectCollectionModelItem.swift */,
+				3497CFED25FFD5B100F83DAA /* PitchAccentCollectionModelItem.swift */,
+				3497CFFD25FFEB5100F83DAA /* PitchAccentModelItem.swift */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -799,8 +805,8 @@
 			);
 			name = Tsurukame;
 			packageProductDependencies = (
-				480B243023D6830300FC2A82 /* SwiftPackageProductDependency */,
-				637CA18625D7F5A10082580E /* SwiftPackageProductDependency */,
+				480B243023D6830300FC2A82 /* Rexy */,
+				637CA18625D7F5A10082580E /* SwiftProtobuf */,
 			);
 			productName = wk;
 			productReference = 6319C9B520441DE200C31F87 /* Tsurukame.app */;
@@ -975,8 +981,8 @@
 			);
 			mainGroup = 630FD60A1FC45BDF00D21C1F;
 			packageReferences = (
-				480B242F23D6830300FC2A82 /* RemoteSwiftPackageReference */,
-				637CA18525D7F5A10082580E /* RemoteSwiftPackageReference */,
+				480B242F23D6830300FC2A82 /* XCRemoteSwiftPackageReference "Rexy" */,
+				637CA18525D7F5A10082580E /* XCRemoteSwiftPackageReference "swift-protobuf" */,
 			);
 			productRefGroup = 630FD60A1FC45BDF00D21C1F;
 			projectDirPath = "";
@@ -1082,7 +1088,9 @@
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/Light-Untar/Light_Untar.framework",
 				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1092,7 +1100,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Light_Untar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1282,6 +1292,7 @@
 				63C74BC825C822C9004F6C99 /* SubjectModelItem.swift in Sources */,
 				638A5C6C25ADBB86001A7AEE /* main.swift in Sources */,
 				6398480E23D699E70077EB6B /* ContextSentenceModelItem.swift in Sources */,
+				3497CFEE25FFD5B100F83DAA /* PitchAccentCollectionModelItem.swift in Sources */,
 				63A16792253AD8E600B5BCD6 /* WebClient.swift in Sources */,
 				63DD391425C509D8004D4E5B /* ProtobufExtensions.swift in Sources */,
 				63BDA9A7200E04E500D75DA2 /* NavigationController.m in Sources */,
@@ -1331,6 +1342,7 @@
 				636A63E1238A2B8200902269 /* SRSStageCategoryItem.swift in Sources */,
 				481B2FED23C55AAF0041EF1F /* CurrentLevelReviewTimeItem.swift in Sources */,
 				63BEBF9725C57D4000123147 /* SearchResultViewController.swift in Sources */,
+				3497CFFE25FFEB5100F83DAA /* PitchAccentModelItem.swift in Sources */,
 				63A237611FE9264300C48657 /* UIColor+HexString.m in Sources */,
 				639528FD25CC2F4F009845ED /* LessonOrderViewController.swift in Sources */,
 				63F7F52C23D43DF6006A31FB /* Services.swift in Sources */,
@@ -2068,7 +2080,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		480B242F23D6830300FC2A82 /* RemoteSwiftPackageReference */ = {
+		480B242F23D6830300FC2A82 /* XCRemoteSwiftPackageReference "Rexy" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/vadymmarkov/Rexy";
 			requirement = {
@@ -2076,7 +2088,7 @@
 				version = 1.0.1;
 			};
 		};
-		637CA18525D7F5A10082580E /* RemoteSwiftPackageReference */ = {
+		637CA18525D7F5A10082580E /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-protobuf";
 			requirement = {
@@ -2087,14 +2099,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		480B243023D6830300FC2A82 /* SwiftPackageProductDependency */ = {
+		480B243023D6830300FC2A82 /* Rexy */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 480B242F23D6830300FC2A82 /* RemoteSwiftPackageReference */;
+			package = 480B242F23D6830300FC2A82 /* XCRemoteSwiftPackageReference "Rexy" */;
 			productName = Rexy;
 		};
-		637CA18625D7F5A10082580E /* SwiftPackageProductDependency */ = {
+		637CA18625D7F5A10082580E /* SwiftProtobuf */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 637CA18525D7F5A10082580E /* RemoteSwiftPackageReference */;
+			package = 637CA18525D7F5A10082580E /* XCRemoteSwiftPackageReference "swift-protobuf" */;
 			productName = SwiftProtobuf;
 		};
 /* End XCSwiftPackageProductDependency section */

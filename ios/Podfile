@@ -30,6 +30,7 @@ target 'Tsurukame' do
   pod 'PromiseKit/CorePromise', '~> 6.13.0'
   pod 'PromiseKit/Foundation', '~> 6.13.0'
   pod 'Reachability', '~> 3.2'
+  pod "Macaw", "0.9.7"
 
   target 'Tests' do
     inherit! :search_paths

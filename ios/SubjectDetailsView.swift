@@ -172,6 +172,14 @@ class SubjectDetailsView: UITableView, SubjectChipDelegate {
       model.addSection("Reading Note")
       model.add(notesItem)
     }
+
+    if subject.subjectType == .vocabulary {
+      model.addSection("Pitch Accent")
+      let pitchAccentItem = PitchAccentCollectionModelItem(subject: subject,
+                                                           localCachingClient: services
+                                                             .localCachingClient)
+      model.add(pitchAccentItem)
+    }
   }
 
   private func addComponents(_ subject: TKMSubject,
